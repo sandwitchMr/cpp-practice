@@ -15,9 +15,10 @@ int main()
 {
 	// Student student1{"sonic1", 10, 2, 100, 90, 80};
 	// Student student1 = {"sonic1", 10, 2, 100, 90, 80};
-	Student studentGroup1[2] = {{"sonic", 15, 2, 87, 77, 80}, {"tails", 12, 2, 100, 100, 100}};
+	Student student1("sonic1", 10, 2, 100, 90, 88);
+	Student studentGroup1[2] = {{"sonic", 15, 2, 87, 77}, {"tails", 12, 2, 100, 100}};
 	// Student studentGroup2[2] = {{12, "sonic", 15, 2, 87, 77, 80}, {11, "tails", 12, 2, 100, 100, 100}};
-	// student1.print();
+	student1.print();
 	for (auto student : studentGroup1)
 	{
 		student.print();
