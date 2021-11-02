@@ -1,23 +1,33 @@
 #include <iostream>
 
-class Square {
+class Square
+{
 public:
-	Square(int len1) {
+	Square(int len1)
+	{
 		len = len1;
 	}
+	~Square()
+	{
+		std::cout << "Bye Bye" << std::endl;
+	}
 
-	int getLen() {
+	int getLen()
+	{
 		return len;
 	}
 
-	int area() {
+	int area()
+	{
 		return len * len;
 	}
+
 private:
 	int len;
 };
 
-int main() {
+int main()
+{
 	Square square1(10);
 	Square square2(20);
 	std::cout << "Square with len " << square1.getLen() << " area: " << square1.area() << std::endl;
